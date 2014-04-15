@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp" >
+
+    
+
+    <TextView
+        android:id="@+id/textView_retemprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_reday_night"
+        android:layout_alignBottom="@+id/textView_reday_night"
+        android:layout_toRightOf="@+id/imageView_retemp_image"
+        android:text="temprature" />
+
+    <TextView
+        android:id="@+id/textView_reday_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_retemp_image"
+        android:layout_alignParentLeft="true"
+        android:text="day_night" />
+
+    <TextView
+        android:id="@+id/textView_rerain_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_rerainy"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/imageView_rerainy"
+        android:text="rate" 
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:id="@+id/imageView_retemp_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/imageView_rerainy"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/imageView_rerainy"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textView_retemprature"
+        android:src="@drawable/umbrella" />
+
+</RelativeLayout>

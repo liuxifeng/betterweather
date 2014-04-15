@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/add"
+        android:title="添加城市">
+    </item>
+    <item
+        android:id="@+id/gps"
+        android:icon="@drawable/ic_action_place"
+        android:showAsAction="ifRoom|withText">
+    </item>
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_detail_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="update2分钟前" />
+
+    <TextView
+        android:id="@+id/textView_detail_statu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_detail_high"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/imageView_detail_img"
+        android:text="多云，温暖" />
+
+    <ListView
+        android:id="@+id/listView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_detail_statu"
+       >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView_detail_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textView_detail_update"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/textView_detail_update"
+        android:src="@drawable/chancerain" />
+
+    <TextView
+        android:id="@+id/textView_detail_high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView_detail_img"
+        android:layout_alignRight="@+id/textView_detail_update"
+        android:text="最高温度"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_detail_low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_detail_high"
+        android:layout_alignLeft="@+id/textView_detail_high"
+        android:text="最低温度"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

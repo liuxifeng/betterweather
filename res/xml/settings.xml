@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:dialogTitle="@string/data_update_rate"
+        android:entries="@array/rate"
+        android:entryValues="@array/rate_value"
+        android:key="data_update_rate"
+        android:negativeButtonText="@string/cancel"
+        android:title="@string/data_update_rate" />
+
+</PreferenceScreen>
